@@ -8,24 +8,20 @@ project 1 - A Random Quote Generator
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 
+quotes = [ {
+  quote: "quote quote",
+  source: "source1",
+  citation: "citation1",
+  
+} , 
+          {
 
-var quotes = [
-  
-  { 
-    title: "by abc", 
-    year: "123",
-    source: "abc",
-    citation: "citation1"
-    
-  },
-  {
-    title: "by abc1",
-    source: "source1",
-    year: "1234"
-  },
-];
-  
-  
+  quote: "quote quote 1",
+  source: "source2",
+  citation: "citation2"
+}
+         ]
+
 
 /*** 
  * `quotes` array 
@@ -33,48 +29,51 @@ var quotes = [
 
 
 
-  function getRandomQuote() {
-  
- randomNum = Math.floor(Math.random() * quotes.length)
-  return quotes[randomNum];
-  
-  }
-/***
 
+function getRandomQuote() {
+  
+  RandomQuote = Math.floor(Math.random() * quotes.lenght)
+  return RandomQuote[quotes]
+}
+/***
  * `getRandomQuote` function
 ***/
 
 
-function printQuote() {
-  var getRandomQuote= getRandomQuote()
-  var HTML = ''
-  
-  HTML += "<p class="quote">" + [getRandomQuote.quote] + "</p>";
 
-  HTML += "<p class="source">" + [getRandomQuote.source];
-  if (getRandomQuote.citation)
-  {
-    
-  HTML+= " <span class="citation">" + [getRandomQuote.citation] </span>
-  }
+function printQuote() {
+
+
+var randomQuote = getRandomQuote()
+var HTML = ''
+
+
+HTML += "<p class="quote">" += [randomQuote.quote] + "</p>"
+HTML += "<p class="source">" += [randomQuote.source]
+
+if(quotes.citation) {
+  "<span class= "citation">" += [HTML.citation] </span>
   
-  if (getRandomQuote.year) {
-  <span class="year"> [getRandomQuote.citation] </span>
+}
+  
+  if (quotes.year)
+  "<span class="year">" += [HTML.year] </span>
 </p>
+
   
-  }
+
+}
+
 /***
  * `printQuote` function
 ***/
 
-}
 
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
-
 
 console.log(printQuote());
 
