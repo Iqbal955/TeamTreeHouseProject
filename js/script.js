@@ -51,12 +51,12 @@ HTML += '<p class="quote">' + [randomQuote.quote] + '</p>'
 HTML += '<p class="source">' + [randomQuote.source]
 
 if(quotes.citation) {
-  '<span class= "citation">' + [randomQuote.citation] + '</span>'
+HTML += '<span class= "citation">' + [randomQuote.citation] + '</span>'
   
 }
   
   if (quotes.year)
-  '<span class="year">' + [randomQuote.year] + '</span> </p>'
+ HTML += '<span class="year">' + [randomQuote.year] + '</span> </p>'
 
   
 
