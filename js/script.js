@@ -38,6 +38,13 @@ quotes = [ {
   citation: "Patrick McKenzie",
   year: "2001"
    
+          },
+          
+          {
+            quote: "Sometimes later becomes never. Do it now.",
+            source: "Success.com",
+            citation: "N/A",
+            year: "N/A"
           }
           
           
